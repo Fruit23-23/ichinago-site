@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>ICHINAGO | 古民家カフェ</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<style>
+html{scroll-behavior:smooth;}
+body{font-family:"Noto Serif JP",serif;}
+.hero-overlay{
+background:rgba(0,0,0,0.35);
+}
+</style>
+</head>
+
+<body class="bg-[#f7f4ef] text-[#3a2f26]">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-[#f7f4ef]/90 backdrop-blur border-b">
+  <div class="max-w-4xl mx-auto px-4 py-6 flex justify-between items-center">
+    <h1 class="text-3xl font-bold tracking-wider">ICHINAGO</h1>
+    <nav class="hidden md:flex gap-10 text-lg ml-auto">
+      <a href="#concept" class="hover:text-[#6b8e6e]">コンセプト</a>
+      <a href="#menu" class="hover:text-[#6b8e6e]">メニュー</a>
+      <a href="#gallery" class="hover:text-[#6b8e6e]">ギャラリー</a>
+      <a href="#access" class="hover:text-[#6b8e6e]">アクセス</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Hero -->
+<section class="h-screen relative flex items-center justify-center text-white">
+<img src="img/exterior.jpg" class="absolute w-full h-full object-cover" alt="古民家外観">
+<div class="hero-overlay absolute inset-0"></div>
+
+<div class="relative text-center px-4">
+<h1 class="text-4xl md:text-6xl mb-6 font-bold">ICHINAGO</h1>
+<h2 class="text-lg md:text-lg">
+愛知・一宮の田舎に佇む<br>
+古民家リノベーションカフェ
+</h2>
+</div>
+</section>
+
+<!-- Concept -->
+<section id="concept" class="py-20 max-w-4xl mx-auto px-4">
+<h2 class="text-4xl mb-8 text-center">コンセプト</h2>
+<p class="leading-8 text-lg text-center">
+ICHINAGOは、愛知県一宮市の静かな田舎にある<br>
+古民家をリノベーションしたカフェです。<br><br>
+木の温もりに包まれながら、<br>
+手作りスイーツとオーガニックコーヒーを楽しみ、<br>
+都会の喧騒を忘れる癒しの時間を提供します。
+</p>
+</section>
+
+<!-- Menu -->
+<section id="menu" class="py-20 bg-[#efe9df]">
+<h2 class="text-4xl text-center mb-12">おすすめメニュー</h2>
+
+<div class="swiper max-w-4xl mx-auto">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide bg-white rounded-xl shadow">
+<img src="img/hamburg.jpg" class="h-64 w-full object-cover">
+<div class="p-6">
+<h3 class="text-xl mb-2">ハンバーグプレート</h3>
+<p>¥1080</p>
+</div>
+</div>
+
+<div class="swiper-slide bg-white rounded-xl shadow">
+<img src="img/sandwich.jpg" class="h-64 w-full object-cover">
+<div class="p-6">
+<h3 class="text-xl mb-2">サンドウィッチセット</h3>
+<p>¥850</p>
+</div>
+</div>
+
+<div class="swiper-slide bg-white rounded-xl shadow">
+<img src="img/lasagna.jpg" class="h-64 w-full object-cover">
+<div class="p-6">
+<h3 class="text-xl mb-2">ラザニアプレート</h3>
+<p>¥950</p>
+</div>
+</div>
+
+<div class="swiper-slide bg-white rounded-xl shadow">
+<img src="img/salad.jpg" class="h-64 w-full object-cover">
+<div class="p-6">
+<h3 class="text-xl mb-2">サラダボウルセット</h3>
+<p>¥950</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-20 max-w-4xl mx-auto px-4">
+<h2 class="text-4xl text-center mb-12">ギャラリー</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+<img src="img/exterior.jpg" class="rounded-xl shadow hover:scale-105 transition" alt="外観">
+<img src="img/interior.jpg" class="rounded-xl shadow hover:scale-105 transition" alt="店内">
+<img src="img/terrace.jpg" class="rounded-xl shadow hover:scale-105 transition" alt="テラス席">
+<img src="img/afternoontea.jpg" class="rounded-xl shadow hover:scale-105 transition" alt="スイーツ">
+<img src="img/dripcoffee.jpg" class="rounded-xl shadow hover:scale-105 transition" alt="コーヒー">
+</div>
+</section>
+
+<!-- Access -->
+<section id="access" class="py-20 bg-[#efe9df] text-center">
+<h2 class="text-4xl mb-8">アクセス</h2>
+<p class="text-lg">
+愛知県一宮市の田舎エリア<br>
+（※詳細住所は後日掲載）
+</p>
+<p class="mt-6">
+営業時間：11:00〜18:00<br>
+定休日：水曜日
+</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#3a2f26] text-white py-10 text-center">
+<p class="text-xl mb-2">ICHINAGO</p>
+<p>© 2026 ICHINAGO All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+new Swiper('.swiper',{
+loop:true,
+autoplay:{delay:3000},
+slidesPerView:1,
+spaceBetween:20,
+breakpoints:{
+768:{slidesPerView:2},
+1024:{slidesPerView:3}
+}
+});
+</script>
+
+</body>
+</html>
